@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script src="./demo.js">
         console.log("welcome to js")
     </script>
+
+
+    <h1> Hello </h1>
+    <!-- <h1> I'm Sanjai </h1> -->
+    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellendus labore quisquam numquam dolore a
+        velit earum ducimus illum voluptatum, quae magni nostrum error similique perspiciatis. Quo velit tenetur
+        nostrum.</p> -->
+
+
+    <!-- <h1 id="one">welcome to js</h1>
+    
+    <h1 class="two">welcome</h1>
+    <h2 class="two"> hello hi....</h2>
+    <h1 class="two"> Nothing</h1>
+    
+   
+    <script>
+        let demo = document.getElementById("one")
+        let demo1 =document.getElementsByClassName("two")
+        let demo2 =document.getElementsByTagName("h1")
+        let demo3 =document.querySelector(".two")
+        let demo4 =document.querySelectorAll(".two")
+
+        demo.textContent="vanakam"
+        demo.innerHTML="<i>vanakam</i>"
+
+        
+    console.log(demo)
+    // console.log(demo1)
+    // console.log(demo2)
+    // console.log(demo3)
+    </script> -->
+
+
+    <!-- // 9.EVENT AND EVENT HANDLER -->
+
+    <!-- mouse event on click -->
+
+    <!-- <h1 id="one"> hello hi</h1>
+    <button onclick="change()">Click</button>
+
+    <script>
+        var h1 = document.getElementById("one")
+        function change() {
+            h1.innerHTML = "<i> Hello HI.....</i>"
+            h1.style.color = "yellow"
+
+        }
+    </script> -->
+
+    <!-- EX..WORKOUT
+
+
+    <h1 id="two">Sanjai</h1>
+    <button onclick="change()"> Dont Touch</button>
+
+    <script>
+
+        var h2 = document.getElementById("two")
+
+        function change()
+        {
+           
+            h2.textContent="nothing"
+        }
+    </script>
+ -->
+
+    <!-- REMOVE  -->
+
+    <h1 class="one" onclick="deleteitem(event)"> one</h1>
+    <h1 class="one" onclick="deleteitem(event)"> two</h1>
+    <h1 class="one" onclick="deleteitem(event)"> three</h1>
+    <button id="button tag">Click</button>
+
+    <script>
+
+        var h1 = document.getElementById("event")
+        function deleteitem(event) {
+            event.target.remove()
+        }
+
+
+    </script>
+
+
+    <!-- 10. CREATE ELEMENT TOPIC WITH append 
+
+     <div id="one">
+        <h1> HELLO </h1>
+        
+    </div>
+    <script>
+        var h1element= document.createElement("h1")
+        h1element.textContent="onnum illa"
+        var divbox = document.getElementById("one")
+        divbox.prepend(h1element)
+
+    </script> 
+
+
+     11.ADD AND DELETE TOPIC 
+
+     <input id="input">
+    <button onclick="add()">Add</button>
+    <ul id="listcon">
+
+    </ul>
+
+    <script>
+        var ul = document.getElementById("listcon")
+        var input = document.getElementById("input")
+        function add() {
+            var listitem = document.createElement("li")
+            listitem.innerHTML = input.value +
+
+                "<button onclick='del(event)'> Delete </button>"
+            ul.appendChild(listitem)
+
+        }
+        function del() {
+            event.target.parentElement.remove()
+        }
+
+    </script>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
 </html>
